@@ -1,0 +1,27 @@
+h3) Merge Sort — The IRCTC Waitlist Merger
+IRCTC has two separately sorted waitlists — one from its mobile app, one from railway counters. 
+To produce a final unified waitlist, they don't re-sort from scratch. They merge both sorted lists in one pass — compare the front of each list,
+pick the smaller token, advance. This is exactly merge sort's merge step.
+
+============================================================================================================
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+i = 0
+j = 0
+c = []
+
+while i < len(a) and j < len(b):
+    if a[i] < b[j]:
+        c.append(a[i])
+        i += 1
+    else:
+        c.append(b[j])
+        j += 1
+while i < len(a):
+    c.append(a[i])
+    i += 1
+while j < len(b):
+    c.append(b[j])
+    j += 1
+print(c)
