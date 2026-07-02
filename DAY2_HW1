@@ -1,0 +1,18 @@
+h1) - The Spam Detector (Search in Stream) – linear search
+A cybersecurity intern at a startup is building a basic spam filter. Incoming emails are checked against a blacklist of known spam sender IDs. The blacklist has no order.
+
+
+============================================================================================================
+# Default blacklist
+blacklist = ["KRISHI", "JAY", "RAHUL", "MOHAN"]
+
+# User Get Value
+search = input("Enter Name: ")
+
+# Check
+for i in blacklist:
+    if i == search:
+        print("Spam Detected")
+        break
+else:
+    print("Not Spam")

@@ -1,0 +1,17 @@
+C2) The Scholarship Ranker
+A college must give scholarships to the top 3 scorers. The coordinator scans the entire marksheet, finds the highest scorer, moves them to position 
+1. Then scans the remaining students for the next highest, and so on. Each pass = one full scan to select the minimum/maximum.
+============================================================================================================================================================
+
+select = [70, 80, 65, 71, 30, 10]
+num = len(select)
+
+for i in range(num):
+    start = i
+
+    for j in range(i + 1, num):
+        if select[j] < select[start]:
+            start = j
+
+    select[i], select[start] = select[start], select[i]
+    print("AFETR SWAPING SELECATION SORT",select)

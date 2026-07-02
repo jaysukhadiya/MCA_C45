@@ -1,0 +1,22 @@
+c3) The Lost Student (Attendance Register)
+Professor Sharma enters class and gets a call from the HOD — "Is Riya Desai present today?" The attendance register is not sorted.
+Names are written in the order students sat down.
+========================================================================================================================
+
+student = ["JAY",
+        "DHRUV",
+        "RIYA",
+        "MANU",
+        "ADI"]
+
+search = "RIYA"
+found = False
+
+for i in  student:
+    if i == search:
+        found = True
+        break
+if found:
+     print(search,"IS PRESENT TODAY" )
+else:
+     print(search,"IS ABSENT TODAY")
