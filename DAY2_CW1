@@ -1,0 +1,15 @@
+C1) your younger sibling is packing books into a bag. They don't plan — they just look at two adjacent books,
+and if the heavier one is on top of the lighter one, they swap. They keep repeating this
+until no more swaps happen. Heaviest books slowly "bubble up" to the bottom.
+
+====================================================================================================================
+bubb=[70,80,65,71,30,10]
+num=len(bubb)
+
+for i in range(num):
+    for j in range(0,num-i-1):
+        if bubb[j] > bubb[j+1]:
+            bubb[j],bubb[j+1]=bubb[j+1],bubb[j]
+    print("AFTER SWAPING",bubb)
+
+
