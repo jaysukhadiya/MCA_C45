@@ -11,22 +11,19 @@ while True:
 
     if CH == 1:
         N = int(input("ENTER NUMBER TO CONVERT INTO BINARY: "))
-        print("NUMBER CONVERTED SUCCESSFULLY.")
         print("BINARY NUMBER IS =", bin(N))
 
     elif CH == 2:
         N = int(input("ENTER NUMBER TO CONVERT INTO OCTAL: "))
-        print("NUMBER CONVERTED SUCCESSFULLY.")
         print("OCTAL NUMBER IS =", oct(N))
 
     elif CH == 3:
         N = int(input("ENTER NUMBER TO CONVERT INTO HEXADECIMAL: "))
-        print("NUMBER CONVERTED SUCCESSFULLY.")
         print("HEXADECIMAL NUMBER IS =", hex(N))
 
     elif CH == 0:
-        print("THANK YOU... PROGRAM EXITED.")
+        print("PROGRAM EXITED.")
         break
 
     else:
-        print("ENTER A VALID CHOICE!!!!")
+        print("REENTER THE CHOICE ")
