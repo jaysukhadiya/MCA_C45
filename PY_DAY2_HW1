@@ -1,0 +1,15 @@
+UNIT = int(input("ENTER NUMBER OF UNIT: "))
+
+FIX_CHARGES = 50
+BILL = 0
+
+if UNIT <= 50:
+    BILL = UNIT * 3.30 + FIX_CHARGES
+
+elif UNIT >= 51 and UNIT <= 200:
+    BILL = UNIT * 3.95 + FIX_CHARGES
+
+else:
+    BILL = UNIT * 5.00 + FIX_CHARGES
+
+print("YOUR TOTAL BILL = RS", BILL)
